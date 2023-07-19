@@ -26,4 +26,8 @@ The difference between a PhD and a High School student:  129065.0 <br>
 The Lowest paid jobs are: Receptionist, Junior Sales Associate with a salary of 25000 <br>
 The Highest paid jobs are: Chief Technology Officer, CEO, Financial Manager with a salary of 250000<br>
 <br>
-Created a Random Forest Regressor model that takes age, gender, education, years of experience as inputs and predicts a salary.
+Created a Random Forest Regressor model that takes age, gender, education, years of experience as inputs and predicts a salary.<br>
+
+<h2>XGBoost Regressor:</h2><br>
+Used on a small housing prices dataset <br>
+Mean absolute error of the model is around 800k while the cheapest house is 1.75M and the most expensive one is 13.3M
