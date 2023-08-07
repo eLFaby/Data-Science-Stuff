@@ -1,5 +1,5 @@
 # The Models<br>
-I will explain how each algorithm works in short after all the results.
+I will explain how each algorithm works in short at the bottom of the readme.
 <h2>Multinomial Naive Bayes:</h2> <br>
 Used a dataset containing 2 columns: 'message' and 'sentiment' where the 'message' column contains text messages and the 'sentiment' column contains it's sentiment, so either 'positive', 'negative' or 'neutral'<br>
 The dataset's size is somewhere around 500 rows.<br><br>
@@ -63,7 +63,7 @@ Mean absolute error of the model is around 800k while the cheapest house is 1.75
 
 
 # A basic explaination of how the algorithms work<br>
-<h3>How Naive Bayes' algorithm works: </h3> <br>
+<h3>How the Naive Bayes algorithm works: </h3> <br>
 The multinomial Naive Bayes is a simple probabilistic classifier that applies Bayes' theorem.<br>
 Naive stands for the assumption of features being independent from each other.<br>  
 It uses the multinomial distribution (e.g. estimating the probability of a given set of outcomes occuring).<br>  
@@ -90,3 +90,18 @@ Best used for:<br>
 - Classification tasks, where the features are continuous and can be modeled by a gaussian distribution (normally distributed features).<br>
 - Numeric sensor readings, measurements...<br>
 
+<h3>How the Linear Regression algorithm works: </h3> <br>
+y - dependent variable (what we want to predict)<br>
+x - independent variable/s (input variable/s)<br>
+A liniear regression would model the relationship between 'y' and one or multiple 'x' through line fitting:<br> y=mx+b<br> where:<br> - 'm' is the slope of the line(how much y changes when x changes)<br>
+- and 'b' is the y-inetercept (where the line crosses the y-axis)<br>
+As per a popular AI's words: In essence, Linear Regression aims to find the line that best fits the given data points, making it a useful tool for making predictions based on historical trends or relationships in data. Keep in mind that Linear Regression is most effective when the relationship between variables is approximately linear. If the data has a more complex pattern, other regression techniques might be more appropriate.<br>
+
+<h3>How the Decision Tree Classifier algorithm works: </h3> <br>
+As it's name implies, it 'acts' like a tree by branching (spliitting  data into subsets) and having leaf nodes (when a stopping criterion is met thus a subset becomes a leaf node). The algorithm will stop when all subsets are turned into leaf nodes<br>
+It can handle both numerical and categorical data, but, is prone to overfitting, especially if the tree is deep or the data is noisy.<br>
+
+
+<h3>How the Random Forest Regressor algorithm works: </h3> <br>
+The name suggests that the algorithm employes multiple decision trees, thus creating a 'forest', the process' name is bootstrapping.<br>
+So the algorithm is pretty powerful and it's capable of capturing more complex relationships.<br>
